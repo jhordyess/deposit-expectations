@@ -1,0 +1,25 @@
+@mixin my_input
+  input[type=range]
+    box-sizing: border-box
+    width: 100%
+    -webkit-appearance: none
+
+  ::-webkit-slider-runnable-track
+    width: 300px
+    height: 2px
+    background: #ddd
+    border: none
+    border-radius: 3px
+  ::-webkit-slider-thumb
+    -webkit-appearance: none
+    border: 1px solid var(--Swatch_8)
+    height: 16px
+    width: 16px
+    border-radius: 50%
+    background: var(--Swatch_5)
+    margin-top: -6px
+
+  :focus
+    outline: none
+  :focus::-webkit-slider-runnable-track
+    background: red

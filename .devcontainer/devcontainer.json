@@ -1,12 +1,18 @@
 {
   "name": "deposit-expectations",
   "image": "jhordyess/node:16",
-  "extensions": [
-    "esbenp.prettier-vscode",
-    "burkeholland.simple-react-snippets"
-  ],
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "burkeholland.simple-react-snippets",
+        "syler.sass-indented"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      }
+    }
   },
+  "postCreateCommand": "bash config.sh",
   "remoteUser": "node"
 }
