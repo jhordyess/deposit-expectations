@@ -1,6 +1,6 @@
 {
-  "name": "deposit-expectations",
-  "description": "",
+  "name": "simple-loan-calculator",
+  "description": "Under construction 👷.",
   "version": "1.0.1",
   "author": "Jhordy Gavinchu <dev@jhordyess.com>",
   "keywords": [],
@@ -43,10 +43,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jhordyess/deposit-expectations.git"
+    "url": "git+https://github.com/jhordyess/simple-loan-calculator.git"
   },
   "bugs": {
-    "url": "https://github.com/jhordyess/deposit-expectations/issues"
+    "url": "https://github.com/jhordyess/simple-loan-calculator/issues"
   },
-  "homepage": "https://github.com/jhordyess/deposit-expectations"
+  "homepage": "https://github.com/jhordyess/simple-loan-calculator"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "deposit-expectations",
+  "name": "simple-loan-calculator",
   "image": "jhordyess/node:16",
   "customizations": {
     "vscode": {
