@@ -12,5 +12,5 @@ npm i react-number-format
 
 npm i -D gh-pages
 
-mkdir -p src/components public
-touch src/index.js src/components/App.jsx public/index.html webpack.config.js
+# mkdir -p src/components public
+# touch src/index.js src/components/App.jsx public/index.html webpack.config.js

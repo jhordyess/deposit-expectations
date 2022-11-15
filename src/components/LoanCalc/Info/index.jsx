@@ -2,8 +2,8 @@ import React from "react";
 import "./style.sass";
 export default function ({ amount, years, interestRate, monthlyP }) {
   return (
-    <section>
-      <div>Your Monthly Payments</div>
+    <section id="info-container">
+      <h3>Your Monthly Payments</h3>
       <div>
         <div>{amount}</div>
         <div>{years}</div>
