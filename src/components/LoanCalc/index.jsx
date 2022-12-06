@@ -24,7 +24,7 @@ export default function () {
   };
 
   return (
-    <main className="container">
+    <main>
       <Form {...{ execute }} />
       <Calculator {...{ amount, years, interestRate, monthlyP }} />
     </main>
