@@ -8,7 +8,7 @@ Under construction 👷.
 
 ## Online
 
-See online: <https://jhordyess.github.io/simple-loan-calculator>.
+See online: <https://simloc.jhordyess.com>.
 
 ## Dockerize
 
@@ -27,7 +27,7 @@ Please review the [docker](https://github.com/jhordyess/simple-loan-calculator/t
 
 ## License
 
-© 2022 [Jhordyess](https://github.com/jhordyess). Under the [MIT](https://choosealicense.com/licenses/mit/) license.
+© 2023 [Jhordyess](https://github.com/jhordyess). Under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
 ---
 
