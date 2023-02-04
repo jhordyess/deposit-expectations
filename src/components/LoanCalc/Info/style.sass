@@ -1,17 +1,47 @@
+// @mixin tdStyle
+
 section#info-container
   background-color: var(--Swatch_9)
   border-radius: 25px
   padding: 32px
-  h3
-    margin-top: 0px
-  >div
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    div
-      margin-top: 24px
-      margin-bottom: 24px
-  button
+  >table
+    width: 100%
+    border-collapse: collapse
+    // margin-top: 24px
+    margin-bottom: 32px
+    tr:nth-child(1) td
+      font-size: larger
+      padding-bottom: 8px
+    tr:nth-child(1) td,tr:nth-child(3) td
+      border-bottom: 1px solid var(--Swatch_3)
+    tr:nth-child(2) td,tr:nth-child(4) td
+      vertical-align: top
+      padding-top: 8px
+      color: var(--Swatch_3)
+      font-size: smaller
+    tr:nth-child(2) td
+      padding-bottom: 32px
+    tr:nth-child(3)
+      td
+        vertical-align: bottom
+      td:nth-child(4)
+        text-align: end
+        line-height: 100%
+        font-weight: bold
+        font-size: xxx-large
+        color: var(--Swatch_8)
+    tr:nth-child(4) td:nth-child(4)
+      text-align: end
+      color: var(--Swatch_1)
+      font-weight: bold
+
+    // display: flex
+    // flex-direction: row
+    // justify-content: space-between
+    // border-bottom: 1px solid orange
+    // margin-bottom: 24px
+    // div
+  >button
     padding: 12px
     width: 100%
     background-color: var(--Swatch_8)
@@ -20,3 +50,12 @@ section#info-container
     border-radius: 24px
     font-weight: bold
     font-size: 11pt
+    cursor: pointer
+  >div
+    padding-top: 32px
+    text-align: center
+    color: var(--Swatch_3)
+    font-size: smaller
+    svg
+      // Swatch_3
+      filter: invert(64%) sepia(10%) saturate(40%) hue-rotate(181deg) brightness(94%) contrast(90%)
