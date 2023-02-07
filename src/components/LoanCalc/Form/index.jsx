@@ -1,6 +1,36 @@
 import React from "react";
 import "./style.sass";
 
+const InputR = ({
+  min = 0,
+  max = 100,
+  step = 1,
+  lock = false,
+  pre = "",
+  value,
+  onChange,
+}) => {
+  return (
+    <div className="inputR">
+      <div>
+        <div>{pre + min}</div>
+        <div>{pre + max}</div>
+      </div>
+      <div>
+        <input
+          type="range"
+          min={min}
+          max={max}
+          value={value}
+          step={step}
+          onChange={onChange}
+          disabled={lock}
+        />
+      </div>
+    </div>
+  );
+};
+
 export default function ({ execute }) {
   const [sw, setSW] = React.useState(false);
   const toogleSW = () => {
@@ -9,6 +39,8 @@ export default function ({ execute }) {
 
   const minAmount = 5000;
   const maxAmount = 300000;
+  const minYears = 10;
+  const maxYears = 30;
 
   const [amount, setAmount] = React.useState("152500");
   const [years, setYears] = React.useState("20");
@@ -48,31 +80,27 @@ export default function ({ execute }) {
     <section id="form-container">
       <div>
         <div>Amount:</div>
-        <div>
-          <input
-            type="range"
-            min={minAmount}
-            max={maxAmount}
-            value={amount}
-            step={1000}
-            onChange={toogleRangeAmount}
-            disabled={lock}
-          />
-        </div>
+        <InputR
+          onChange={toogleRangeAmount}
+          value={amount}
+          step={1000}
+          min={minAmount}
+          max={maxAmount}
+          disabled={lock}
+          pre="$"
+        />
         <div>
           <output>{amount}</output>
         </div>
         <div>Number of years:</div>
-        <div>
-          <input
-            type="range"
-            min={10}
-            max={30}
-            value={years}
-            onChange={toogleYears}
-            disabled={lock}
-          />
-        </div>
+        <InputR
+          onChange={toogleYears}
+          value={years}
+          step={1}
+          min={minYears}
+          max={maxYears}
+          disabled={lock}
+        />
         <div>
           <output>{years}</output>
         </div>

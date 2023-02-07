@@ -1,25 +1,34 @@
 @mixin my_input
-  input[type=range]
-    box-sizing: border-box
-    width: 100%
-    -webkit-appearance: none
+  div.inputR
+    >div:nth-child(1)
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      div
+        color: var(--gray)
+        font-size: smaller
+    >div:nth-child(2)
+      input[type=range]
+        box-sizing: border-box
+        width: 100%
+        -webkit-appearance: none
 
-  ::-webkit-slider-runnable-track
-    width: 300px
-    height: 2px
-    background: #ddd
-    border: none
-    border-radius: 3px
-  ::-webkit-slider-thumb
-    -webkit-appearance: none
-    border: 2px solid var(--Swatch_8)
-    height: 16px
-    width: 16px
-    border-radius: 50%
-    background: var(--Swatch_5)
-    margin-top: -6px
+      ::-webkit-slider-runnable-track
+        width: 300px
+        height: 2px
+        background: var(--gray2)
+        border: none
+        border-radius: 3px
+      ::-webkit-slider-thumb
+        -webkit-appearance: none
+        border: 2px solid var(--color6)
+        height: 16px
+        width: 16px
+        border-radius: 50%
+        background: var(--color1)
+        margin-top: -6px
 
-  :focus
-    outline: none
-  :focus::-webkit-slider-runnable-track
-    background: red
+      :focus
+        outline: none
+      :focus::-webkit-slider-runnable-track
+        background: var(--color6)
