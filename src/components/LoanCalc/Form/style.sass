@@ -2,15 +2,32 @@
 section#form-container
   >div
     display: grid
-    grid-template-columns: 1fr 2.25fr 1fr
-    gap: 12px
+    grid-template-columns: 1fr 3.5fr 1fr
+    column-gap: 64px
+    row-gap: 24px
+    align-items: center
     @include my_input
-    div
-      // margin-top: 12px
-      // margin-bottom: 12px
+    div.output,div.input
+      align-self: flex-end
+    div.input
+      margin-bottom: -6px
+    div.output,div#Irate
+      border-bottom: 2px solid var(--gray2)
+      >div
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        >span
+          color: var(--gray)
+          font-size: .9rem
     div#Irate
       grid-column-start: 3
-      // grid-column-end: 3
+      margin-top: 6px
+      input
+        width: 24px
+        -webkit-appearance: none
+        border: none
+        background: none
   >button
     margin: 32px
     padding: 12px

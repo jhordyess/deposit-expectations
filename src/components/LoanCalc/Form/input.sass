@@ -8,17 +8,17 @@
         color: var(--gray)
         font-size: smaller
     >div:nth-child(2)
+      margin-top: -6px
       input[type=range]
         box-sizing: border-box
         width: 100%
         -webkit-appearance: none
 
       ::-webkit-slider-runnable-track
-        width: 300px
         height: 2px
         background: var(--gray2)
         border: none
-        border-radius: 3px
+
       ::-webkit-slider-thumb
         -webkit-appearance: none
         border: 2px solid var(--color6)
@@ -28,7 +28,7 @@
         background: var(--color1)
         margin-top: -6px
 
-      :focus
-        outline: none
-      :focus::-webkit-slider-runnable-track
-        background: var(--color6)
+      // :focus
+      //   outline: none
+      // :focus::-webkit-slider-runnable-track
+      //   background: var(--color6)

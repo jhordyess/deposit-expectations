@@ -80,33 +80,46 @@ export default function ({ execute }) {
     <section id="form-container">
       <div>
         <div>Amount:</div>
-        <InputR
-          onChange={toogleRangeAmount}
-          value={amount}
-          step={1000}
-          min={minAmount}
-          max={maxAmount}
-          disabled={lock}
-          pre="$"
-        />
-        <div>
-          <output>{amount}</output>
+        <div className="input">
+          <InputR
+            onChange={toogleRangeAmount}
+            value={amount}
+            step={1000}
+            min={minAmount}
+            max={maxAmount}
+            disabled={lock}
+            pre="$"
+          />
+        </div>
+        <div className="output">
+          <div>
+            <span>USD</span>
+            <output>{amount}</output>
+          </div>
         </div>
         <div>Number of years:</div>
-        <InputR
-          onChange={toogleYears}
-          value={years}
-          step={1}
-          min={minYears}
-          max={maxYears}
-          disabled={lock}
-        />
-        <div>
-          <output>{years}</output>
+        <div className="input">
+          <InputR
+            onChange={toogleYears}
+            value={years}
+            step={1}
+            min={minYears}
+            max={maxYears}
+            disabled={lock}
+          />
+        </div>
+        <div className="output">
+          <div>
+            <span>years</span>
+            <output>{years}</output>
+          </div>
         </div>
         <div>Interest rate:</div>
         <div id="Irate">
-          <input defaultValue={4} />
+          <div>
+            <span>%</span>
+            <input defaultValue={4} />
+          </div>
         </div>
       </div>
       <button onClick={compute}>{btnTxt}</button>

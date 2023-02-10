@@ -48,5 +48,6 @@
   "bugs": {
     "url": "https://github.com/jhordyess/simple-loan-calculator/issues"
   },
-  "homepage": "https://github.com/jhordyess/simple-loan-calculator"
+  "homepage": "https://github.com/jhordyess/simple-loan-calculator",
+  "main": "webpack.config.prod.js"
 }
