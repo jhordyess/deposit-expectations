@@ -13,21 +13,31 @@ section#form-container
       margin-bottom: -6px
     div.output,div#Irate
       border-bottom: 2px solid var(--gray2)
-      >div
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        >span
-          color: var(--gray)
-          font-size: .9rem
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      >span
+        color: var(--gray)
+        font-size: .9rem
     div#Irate
       grid-column-start: 3
       margin-top: 6px
-      input
-        width: 24px
-        -webkit-appearance: none
-        border: none
-        background: none
+      position: relative
+      >aside
+        right: -36px
+        top: -8px
+        position: absolute
+        display: flex
+        flex-direction: column
+        button
+          border: none
+          background-color: var(--color1)
+          svg
+            // #6185ba color6
+            filter: invert(44%) sepia(75%) saturate(289%) hue-rotate(176deg) brightness(100%) contrast(87%)
+        button:hover svg
+          filter: none
+
   >button
     margin: 32px
     padding: 12px

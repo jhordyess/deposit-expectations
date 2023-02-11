@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.sass";
+import { DownArrow } from "@components/Icons";
 export default function ({ amount, years, interestRate, monthlyP }) {
   return (
     <section id="info-container">
@@ -27,20 +28,7 @@ export default function ({ amount, years, interestRate, monthlyP }) {
       <div>
         See your options
         <br />
-        <svg
-          width="15"
-          height="8"
-          viewBox="-2.5 -5 75 60"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0,0 l35,50 l35,-50"
-            fill="none"
-            stroke="black"
-            stroke-linecap="round"
-            stroke-width="12"
-          />
-        </svg>
+        <DownArrow />
       </div>
     </section>
   );

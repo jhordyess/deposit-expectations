@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.sass";
-
+import { DownArrow, UpArrow } from "@components/Icons";
 const InputR = ({
   min = 0,
   max = 100,
@@ -41,6 +41,8 @@ export default function ({ execute }) {
   const maxAmount = 300000;
   const minYears = 10;
   const maxYears = 30;
+  const minInterest = 1;
+  const maxInterest = 10;
 
   const [amount, setAmount] = React.useState("152500");
   const [years, setYears] = React.useState("20");
@@ -56,8 +58,13 @@ export default function ({ execute }) {
     setYears(target.value);
   };
 
-  const toogleInterestRate = ({ target }) => {
-    setInterestRate(target.value);
+  const interestRateUp = () => {
+    const curr = Number(interestRate);
+    if (curr != maxInterest) setInterestRate(curr + 1);
+  };
+  const interestRateDown = () => {
+    const curr = Number(interestRate);
+    if (curr != minInterest) setInterestRate(curr - 1);
   };
 
   const compute = async () => {
@@ -92,10 +99,8 @@ export default function ({ execute }) {
           />
         </div>
         <div className="output">
-          <div>
-            <span>USD</span>
-            <output>{amount}</output>
-          </div>
+          <span>USD</span>
+          <output>{amount}</output>
         </div>
         <div>Number of years:</div>
         <div className="input">
@@ -109,17 +114,21 @@ export default function ({ execute }) {
           />
         </div>
         <div className="output">
-          <div>
-            <span>years</span>
-            <output>{years}</output>
-          </div>
+          <span>years</span>
+          <output>{years}</output>
         </div>
         <div>Interest rate:</div>
         <div id="Irate">
-          <div>
-            <span>%</span>
-            <input defaultValue={4} />
-          </div>
+          <span>%</span>
+          <output>{interestRate}</output>
+          <aside>
+            <button onClick={interestRateUp}>
+              <UpArrow />
+            </button>
+            <button onClick={interestRateDown}>
+              <DownArrow />
+            </button>
+          </aside>
         </div>
       </div>
       <button onClick={compute}>{btnTxt}</button>
