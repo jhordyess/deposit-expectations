@@ -1,9 +1,13 @@
 {
   "name": "simple-loan-calculator",
-  "description": "Under construction 👷.",
+  "description": "Calculator for basic calculation of loans",
   "version": "1.0.1",
   "author": "Jhordy Gavinchu <dev@jhordyess.com>",
-  "keywords": [],
+  "keywords": [
+    "reactjs",
+    "loan-calculator",
+    "sass"
+  ],
   "license": "MIT",
   "dependencies": {
     "react": "^18.2.0",

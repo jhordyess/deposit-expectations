@@ -1,10 +1,8 @@
 # Simple loan calculator
 
-Under construction 👷.
+Calculator for basic calculation of loans. Using the formula explained in: [Investopedia](https://www.investopedia.com/) with the post: [Calculate Amortization of Loans](https://www.investopedia.com/terms/a/amortization.asp#toc-amortization-of-loans). Also, the UX was based on [Loan calculator by Bojan Oreskovic](https://dribbble.com/shots/16434845-Loan-calculator).
 
-## Based on
-
-<https://dribbble.com/shots/16434845-Loan-calculator>
+Enter the amount, number of years, and interest rate; then click "Calculate" to compute monthly payments.
 
 ## Online
 

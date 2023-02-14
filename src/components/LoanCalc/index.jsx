@@ -1,13 +1,7 @@
 import React from "react";
-import NumberFormat from "react-number-format";
 import Form from "./Form";
-import { monthyPayment } from "./utils/calculations";
+import { monthyPaymentCalc } from "./utils/calculations";
 import Calculator from "./Info";
-
-const NF_params = {
-  currency: { displayType: "text", thousandSeparator: true, prefix: "$" },
-  percent: { displayType: "text", suffix: "% yearly" },
-};
 
 export default function () {
   const [amount, setAmount] = React.useState("152500");
@@ -19,7 +13,7 @@ export default function () {
     setAmount(a);
     setYears(b);
     setInterestRate(c);
-    const aux = monthyPayment(Number(a), Number(b), Number(c) / 100);
+    const aux = monthyPaymentCalc(Number(a), Number(b), Number(c) / 100);
     setMonthlyP(String(Math.round(aux)));
   };
 

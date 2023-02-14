@@ -12,8 +12,8 @@ export const DownArrow = ({ width = 10, height = 6 }) => {
         d="M 0 0 L 35 50 L 70 0"
         fill="none"
         stroke="black"
-        stroke-linecap="round"
-        stroke-width="16"
+        strokeLinecap="round"
+        strokeWidth="16"
       />
     </svg>
   );
@@ -30,8 +30,8 @@ export const UpArrow = ({ width = 10, height = 6 }) => {
         d="M 0 50 L 35 0 L 70 50"
         fill="none"
         stroke="black"
-        stroke-linecap="round"
-        stroke-width="16"
+        strokeLinecap="round"
+        strokeWidth="16"
       />
     </svg>
   );

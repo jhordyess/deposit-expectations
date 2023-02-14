@@ -1,20 +1,21 @@
 import React from "react";
 import "./style.sass";
+import { CurrencyFormat } from "../utils/Format";
 import { DownArrow, UpArrow } from "@components/Icons";
 const InputR = ({
   min = 0,
   max = 100,
   step = 1,
   lock = false,
-  pre = "",
+  Element,
   value,
   onChange,
 }) => {
   return (
     <div className="inputR">
       <div>
-        <div>{pre + min}</div>
-        <div>{pre + max}</div>
+        <div>{Element ? <Element value={min} /> : min}</div>
+        <div>{Element ? <Element value={max} /> : max}</div>
       </div>
       <div>
         <input
@@ -95,12 +96,14 @@ export default function ({ execute }) {
             min={minAmount}
             max={maxAmount}
             disabled={lock}
-            pre="$"
+            Element={CurrencyFormat}
           />
         </div>
         <div className="output">
           <span>USD</span>
-          <output>{amount}</output>
+          <output>
+            <CurrencyFormat value={amount} />
+          </output>
         </div>
         <div>Number of years:</div>
         <div className="input">
