@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.sass";
 import { DownArrow } from "@components/Icons";
-import { CurrencyFormat, NumberFormat, PercentFormat } from "../utils/Format";
+import { CurrencyFormat, PercentFormat } from "../utils/Format";
 
 export default function ({ amount, years, interestRate, monthlyP }) {
   return (
@@ -23,8 +23,7 @@ export default function ({ amount, years, interestRate, monthlyP }) {
               <PercentFormat value={interestRate} />
             </td>
             <td>
-              <span>$</span>
-              <NumberFormat value={monthlyP} />
+              <CurrencyFormat value={monthlyP} sign={false} />
             </td>
           </tr>
           <tr>
