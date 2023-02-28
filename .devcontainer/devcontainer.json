@@ -5,7 +5,7 @@
     "vscode": {
       "extensions": [
         "esbenp.prettier-vscode",
-        "burkeholland.simple-react-snippets",
+        "dsznajder.es7-react-js-snippets",
         "syler.sass-indented"
       ],
       "settings": {
