@@ -4,6 +4,10 @@ Calculator for basic calculation of loans. Using the formula explained in: [Inve
 
 Enter the amount, number of years, and interest rate; then click "Calculate" to compute monthly payments.
 
+## Screenshot
+
+![Desktop](https://res.cloudinary.com/jhordyess/image/upload/v1679090677/simple-loan-calculator/desktop.png)
+
 ## Online
 
 See online: <https://simloc.jhordyess.com>.
