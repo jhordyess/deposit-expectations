@@ -18,9 +18,9 @@ export default function () {
   };
 
   return (
-    <main>
+    <>
       <Form {...{ execute }} />
       <Calculator {...{ amount, years, interestRate, monthlyP }} />
-    </main>
+    </>
   );
 }

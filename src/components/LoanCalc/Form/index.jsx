@@ -2,15 +2,7 @@ import React from "react";
 import "./style.sass";
 import { CurrencyFormat } from "../utils/Format";
 import { DownArrow, UpArrow } from "@components/Icons";
-const InputR = ({
-  min = 0,
-  max = 100,
-  step = 1,
-  lock = false,
-  Element,
-  value,
-  onChange,
-}) => {
+const InputR = ({ min = 0, max = 100, step = 1, Element, value, onChange }) => {
   return (
     <div className="inputR">
       <div>
@@ -25,7 +17,6 @@ const InputR = ({
           value={value}
           step={step}
           onChange={onChange}
-          disabled={lock}
         />
       </div>
     </div>
@@ -33,11 +24,6 @@ const InputR = ({
 };
 
 export default function ({ execute }) {
-  const [sw, setSW] = React.useState(false);
-  const toogleSW = () => {
-    setSW(!sw);
-  };
-
   const minAmount = 5000;
   const maxAmount = 300000;
   const minYears = 10;
@@ -48,8 +34,6 @@ export default function ({ execute }) {
   const [amount, setAmount] = React.useState("152500");
   const [years, setYears] = React.useState("20");
   const [interestRate, setInterestRate] = React.useState("4");
-  const [btnTxt, setbtnTxt] = React.useState("Calculate");
-  const [lock, setLock] = React.useState(false);
 
   const toogleRangeAmount = ({ target }) => {
     setAmount(target.value);
@@ -69,19 +53,8 @@ export default function ({ execute }) {
   };
 
   const compute = async () => {
-    if (!sw) {
-      await execute(amount, years, interestRate);
-      setbtnTxt("Reset");
-      toogleSW();
-      setLock(true);
-    } else {
-      // setAmount("152500");
-      // setYears("20");
-      // setInterestRate("4");
-      setbtnTxt("Calculate");
-      toogleSW();
-      setLock(false);
-    }
+    await execute(amount, years, interestRate);
+    setbtnTxt("Calculate");
   };
 
   return (
@@ -95,7 +68,6 @@ export default function ({ execute }) {
             step={1000}
             min={minAmount}
             max={maxAmount}
-            disabled={lock}
             Element={CurrencyFormat}
           />
         </div>
@@ -113,7 +85,6 @@ export default function ({ execute }) {
             step={1}
             min={minYears}
             max={maxYears}
-            disabled={lock}
           />
         </div>
         <div className="output">
@@ -134,7 +105,7 @@ export default function ({ execute }) {
           </aside>
         </div>
       </div>
-      <button onClick={compute}>{btnTxt}</button>
+      <button onClick={compute}>Calculate</button>
     </section>
   );
 }

@@ -13,6 +13,7 @@ module.exports = {
     extensions: [".js", ".jsx"],
     alias: {
       "@components": path.resolve(__dirname, "src", "components"),
+      "@pages": path.resolve(__dirname, "src", "pages"),
       "@styles": path.resolve(__dirname, "src", "styles"),
     },
   },
@@ -43,7 +44,6 @@ module.exports = {
       directory: path.join(__dirname, "dist"),
     },
     watchFiles: path.join(__dirname, "src", "**"),
-    // host: "localhost",
-    port: 3640,
+    port: 3641,
   },
 };

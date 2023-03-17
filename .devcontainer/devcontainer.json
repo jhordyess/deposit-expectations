@@ -6,7 +6,9 @@
       "extensions": [
         "esbenp.prettier-vscode",
         "dsznajder.es7-react-js-snippets",
-        "syler.sass-indented"
+        "Syler.sass-indented",
+        "planbcoding.vscode-react-refactor",
+        "WallabyJs.console-ninja"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh"

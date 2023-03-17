@@ -1,16 +1,12 @@
 # Simple loan calculator
 
-Calculator for basic calculation of loans. Using the formula explained in: [Investopedia](https://www.investopedia.com/) with the post: [Calculate Amortization of Loans](https://www.investopedia.com/terms/a/amortization.asp#toc-amortization-of-loans). Also, the UX was based on [Loan calculator by Bojan Oreskovic](https://dribbble.com/shots/16434845-Loan-calculator).
+Calculator for basic calculation of loans. Using the formula explained in: [Investopedia](https://www.investopedia.com/) with the post: [Calculate Amortization of Loans](https://www.investopedia.com/terms/a/amortization.asp#toc-amortization-of-loans). Also, is inspired by [Bojan Oreskovic's Loan calculator](https://dribbble.com/shots/16434845-Loan-calculator).
 
 Enter the amount, number of years, and interest rate; then click "Calculate" to compute monthly payments.
 
 ## Online
 
 See online: <https://simloc.jhordyess.com>.
-
-## Dockerize
-
-Please review the [docker](https://github.com/jhordyess/simple-loan-calculator/tree/docker) branch.
 
 ## Dev Info
 
@@ -22,6 +18,11 @@ Please review the [docker](https://github.com/jhordyess/simple-loan-calculator/t
 - Platform: [Docker](https://www.docker.com/)
 - Web Server: [NGINX](https://www.nginx.com/)
 - [VSCode](https://code.visualstudio.com/) with [remote containers](https://code.visualstudio.com/docs/remote/containers)
+
+## To-Do
+
+- Make the design responsive.
+- Add more features 🤔
 
 ## License
 
