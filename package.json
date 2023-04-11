@@ -19,6 +19,7 @@
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
+    "cname-webpack-plugin": "^3.0.0",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^4.0.0",
     "gh-pages": "^4.0.0",
@@ -51,6 +52,5 @@
   "bugs": {
     "url": "https://github.com/jhordyess/simple-loan-calculator/issues"
   },
-  "homepage": "https://github.com/jhordyess/simple-loan-calculator",
-  "main": "webpack.config.prod.js"
+  "homepage": "https://github.com/jhordyess/simple-loan-calculator"
 }
