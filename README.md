@@ -22,7 +22,7 @@ The design is inspired by [Bojan Oreskovic's Loan calculator](https://dribbble.c
 
 ### Online
 
-Visit the project at: <https://simloc.jhordyess.com>.
+Visit the project at: <https://jhordyess.github.io/simple-loan-calculator>.
 
 ### Screenshot
 
