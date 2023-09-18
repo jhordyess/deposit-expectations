@@ -7,7 +7,7 @@ export const CurrencyFormat = ({ value, sign = true }) => (
       currency: 'USD',
       maximumFractionDigits: 0,
       signDisplay: sign ? 'auto' : 'never'
-    }).format(Number(value))}
+    }).format(value)}
   </span>
 )
 
@@ -20,7 +20,7 @@ export const PercentFormat = ({ value }) => (
   <span>
     {new Intl.NumberFormat('en-US', {
       style: 'percent'
-    }).format(Number(value) / 100)}
+    }).format(value / 100)}
   </span>
 )
 

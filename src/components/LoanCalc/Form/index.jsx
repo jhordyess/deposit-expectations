@@ -77,7 +77,7 @@ function Form({ execute }) {
         <div className="output">
           <span>USD</span>
           <output>
-            <CurrencyFormat value={amount} />
+            <CurrencyFormat value={Number(amount)} />
           </output>
         </div>
         <div>Number of years:</div>

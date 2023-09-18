@@ -16,14 +16,14 @@ function Info({ amount, years, interestRate, monthlyP }) {
           </tr>
           <tr>
             <td>
-              <CurrencyFormat value={amount} />
+              <CurrencyFormat value={Number(amount)} />
             </td>
             <td>{years}</td>
             <td>
-              <PercentFormat value={interestRate} />
+              <PercentFormat value={Number(interestRate)} />
             </td>
             <td>
-              <CurrencyFormat value={monthlyP} sign={false} />
+              <CurrencyFormat value={Number(monthlyP)} sign={false} />
             </td>
           </tr>
           <tr>
