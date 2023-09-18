@@ -1,9 +1,9 @@
-import React from "react";
-import "./style.sass";
-import { DownArrow } from "@components/Icons";
-import { CurrencyFormat, PercentFormat } from "../utils/Format";
+import PropTypes from 'prop-types'
+import './style.sass'
+import { DownArrow } from '@/components/Icons'
+import { CurrencyFormat, PercentFormat } from '../utils/Format'
 
-export default function ({ amount, years, interestRate, monthlyP }) {
+function Info({ amount, years, interestRate, monthlyP }) {
   return (
     <section id="info-container">
       <table>
@@ -41,5 +41,14 @@ export default function ({ amount, years, interestRate, monthlyP }) {
         <DownArrow />
       </div>
     </section>
-  );
+  )
 }
+
+Info.propTypes = {
+  amount: PropTypes.string.isRequired,
+  years: PropTypes.string.isRequired,
+  interestRate: PropTypes.string.isRequired,
+  monthlyP: PropTypes.string.isRequired
+}
+
+export default Info
